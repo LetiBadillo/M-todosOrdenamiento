@@ -15,7 +15,7 @@ public class tipos {
     static int auxiliar;
     
     public static void seleccion(int x[]){
-        for(int i=0; i<x.length; i++){
+        for(int i=0; i<x.length; i++){  
             int m=i;
             for (int j=i+1; j < x.length; j++){
                 if(x[j]<x[m]){
