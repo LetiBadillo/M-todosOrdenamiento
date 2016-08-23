@@ -20,22 +20,22 @@ public class AlgoritmosdeOrdenamiento {
         // TODO code application logic here
         int v, i, e, a;
         i=0;
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); //Scanner
         System.out.println("Introduzca el número de elementos");
-        v = sc.nextInt();
-        int x[]= new int[v];
-        while(i!=v){
-        System.out.println("Introduzca el elemento #"+(i+1)+" y presione enter");
-        e=sc.nextInt();
-        x[i]=e;
-        i++;
+        v = sc.nextInt(); //Variable que almacena lo que introduce el scanner
+        int x[]= new int[v]; //crea el arreglo
+        while(i!=v){ //mientras el contador i no llegue al valor de v
+        System.out.println("Introduzca el elemento #"+(i+1)+" y presione enter"); //pide los elementos del arreglo
+        e=sc.nextInt(); //los almacena en la variable e
+        x[i]=e; //los introduce al arreglo
+        i++; //i incrementa
             }
         System.out.println("Elementos:");
-        tipos.mostrarArreglo(x);
-        tipos.seleccion(x);
+        tipos.mostrarArreglo(x); //imprime los elementos sin ordenar
+        tipos.seleccion(x); //realiza el ordenamiento
         System.out.println("");
         System.out.println("Elementos ordenados:");
-        tipos.mostrarArreglo(x);
+        tipos.mostrarArreglo(x); //muestra el arreglo ordenado
         System.out.println("");
         
     }
